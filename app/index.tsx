@@ -71,6 +71,34 @@ export default function Index() {
       </View>
     </View>
     </>
+
+     {/* Delivery Options */}
+      <View style={styles.deliveryOptionsContainer}>
+        <View style={styles.deliveryTabs}>
+          <TouchableOpacity style={styles.activeTab}>
+            <Text style={styles.activeTabText}>Delivery</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.inactiveTab}>
+            <Text style={styles.inactiveTabText}>Pickup</Text>
+          </TouchableOpacity>
+        </View>
+        <TouchableOpacity style={styles.groupOrderButton}>
+          <Text style={styles.groupOrderIcon}>👥</Text>
+          <Text style={styles.groupOrderText}>Group order</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Fee Information Cards */}
+      <View style={styles.feeCardsContainer}>
+        <View style={styles.feeCard}>
+          <Text style={styles.feeCardTitle}>$0.99 Delivery Fee + $2.50-$6.50 Service Fee</Text>
+          <Text style={styles.feeCardLink}>Pricing & fees ℹ️</Text>
+        </View>
+        <View style={styles.feeCard}>
+          <Text style={styles.closedText}>Closed</Text>
+          <Text style={styles.deliveryTimeText}>Delivery time</Text>
+        </View>
+      </View>
   );
 }
 
